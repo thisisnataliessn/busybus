@@ -24,34 +24,70 @@ body {
   margin: 0 auto;
   width: 420px;
   line-height:1em;
+  height: 100%;
   }
 
 nav {
   height:100px;
+  background-color: #248FB2;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+  position: relative;
+  z-index: 10;
+  display: grid;
+  grid-template-columns: repeat(6,1fr);
 }
 
+.status-bar {
+  background-color: rgba(0, 0, 0, 0.4);
+  height: 24px;
+  grid-column: 1/span 6;
+  display: fixed;
+}
 
-back-arrow {
-    background-image: url("../images/arrow_back.svg");
+.status-bar p {
+  color: #fff;
+  text-align: right;
+  margin-right: 8px;
+  margin-top: 4px;
+}
+.back-arrow {
+  background: url("../images/arrow_back.png") no-repeat;
+  display: block;
+  color: #fff;
+  width: 20px;
+  height: 20px;
+  margin-left: 16px;
+  grid-column: 1/span 1;
   }
 
 h2.page-title {
   font-size: 1.25em;
-  line-height: 1.6em;
+  letter-spacing: .5px;
   color: #fff;
-  background-color: #248FB2;
   padding-left: 20%;
+  margin-left: -40px;
+  grid-column: 2/span 4;
+}
+
+.map img {
+    width:100%;
 }
 
 main {
   background-color: #fff;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+  position: relative;
+  bottom: 60px;
+
 }
 
 .line-entry {
-  display: inline-block;
+  display: inline-flex;
   float: left;
   margin:8px 16px 8px 16px;
   width: 100%;
+  display: grid;
+  grid-template-columns: repeat(12,1fr);
 }
 
 h1.stop-name {
@@ -62,10 +98,11 @@ h1.stop-name {
   text-align: left;
   padding-left: 16px;
   line-height: 2em;
+  letter-spacing: .5px;
 }
 
 .bus-line {
-    width: 15%;
+    grid-column: 1/span 2;
 }
 
 .bus-line h3 {
@@ -76,22 +113,28 @@ h1.stop-name {
   text-align: center;
 }
 
-.time-icon {
-  background-image: url("../images/time-icon.svg");
-}
-
 .destination {
-    width: 50%;
+    grid-column: 3/span 7;
 }
 
 .destination p {
   font-size:1em;
   line-height: 1.5em;
+  padding-left: 16px;
 }
 
 .leaving-time {
-  width: 35%;
+  grid-column: 10/span 3;
+  justify-content: end;
 }
+
+.time-icon {
+  background: url("../images/time-icon.png") no-repeat;
+  display: block;
+  width: 20px;
+  height: 20px;
+  padding-left: 4px;
+  }
 
 .leaving-time h6 {
   font-size:.88em;
@@ -102,4 +145,38 @@ h1.stop-name {
   font-size: 1em;
   line-height: 1.25em;
   font-weight: 700;
+  }
+
+.bottom-navbar {
+  background-color: #000;
+  height: 48px;
+  display: grid;
+  grid-template: repeat(3,1fr)/repeat(5, 1fr);
+  justify-items: center;
+}
+
+.back {
+  background: url("../images/back.svg") no-repeat;
+  width: 15px;
+  height: 17px;
+  grid-column: 2/span 1;
+  grid-row: 2/span 1;
+  justify-content: start;
+  }
+
+.home {
+  background: url("../images/home.svg") no-repeat;
+  width: 15px;
+  height: 17px;
+  grid-column: 3/span 1;
+  grid-row: 2/span 1;
+}
+
+.recents {
+  background: url("../images/recents.svg") no-repeat;
+  width: 15px;
+  height: 17px;
+  grid-column: 4/span 1;
+  grid-row: 2/span 1;
+  justify-content: end;
 }
