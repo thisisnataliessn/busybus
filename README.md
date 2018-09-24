@@ -1,6 +1,5 @@
 # busybus
-Questions from 2018-9-24:
-Do I need to sort my stops by eastbound, westbound, etc?
-How to get my time-icon and back arrow to images show up? (I tried `background-image` property in CSS)
-How to get `bus-line`, `destination`, and `leaving-time` to display inline? (I tried `display:inline-block` for the `line-entry` class)
-Why won’t the `height` property for `nav` work? And also, why won’t it take the #248FB2 background color that I currently have behind `h2.page-title`?
+Questions 2018-9-24 afternoon
+1. Why can't I get my `leaving-time` class to have the text justified on the right? (I'd add a margin so it wouldn't reach the end of the page of course)
+2. Why doesn't the `justify-content` property work for my `back`, `recents`, and `leaving-time` classes?
+3. Why doesn't the `bottom-navbar` start right below the `main` element (which I moved up to cover part of the map)?
