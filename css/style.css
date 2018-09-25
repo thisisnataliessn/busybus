@@ -22,7 +22,7 @@ body {
   font-size: 16 px;
   font-family: "Roboto",sans-serif;
   margin: 0 auto;
-  width: 420px;
+  width: 575px;
   line-height:1em;
   height: 100%;
   }
@@ -65,7 +65,7 @@ h2.page-title {
   letter-spacing: .5px;
   color: #fff;
   padding-left: 20%;
-  margin-left: -40px;
+  margin-left: -60px;
   grid-column: 2/span 4;
 }
 
@@ -73,17 +73,21 @@ h2.page-title {
     width:100%;
 }
 
+.selected-stop img {
+    position: relative;
+    bottom: 100px;;
+    left: 255px;
+    height: 45px;
+}
+
 main {
   background-color: #fff;
   box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
-  position: relative;
-  bottom: 60px;
-
+  /*position: relative;
+  bottom: 75px;*/
 }
 
 .line-entry {
-  display: inline-flex;
-  float: left;
   margin:8px 16px 8px 16px;
   width: 100%;
   display: grid;
@@ -125,8 +129,7 @@ h1.stop-name {
 
 .leaving-time {
   grid-column: 10/span 3;
-  justify-content: end;
-}
+  }
 
 .time-icon {
   background: url("../images/time-icon.png") no-repeat;
@@ -139,19 +142,23 @@ h1.stop-name {
 .leaving-time h6 {
   font-size:.88em;
   line-height: 1.25em;
+  margin-left: 12px;
 }
 
 .leaving-time p {
   font-size: 1em;
   line-height: 1.25em;
   font-weight: 700;
+  margin-left: 16px;
   }
 
-.bottom-navbar {
+.bottom-appbar {
   background-color: #000;
+  position: relative;
   height: 48px;
+  width: 100%;
   display: grid;
-  grid-template: repeat(3,1fr)/repeat(5, 1fr);
+  grid-template: repeat(3,1fr)/repeat(3, 1fr);
   justify-items: center;
 }
 
@@ -159,16 +166,16 @@ h1.stop-name {
   background: url("../images/back.svg") no-repeat;
   width: 15px;
   height: 17px;
-  grid-column: 2/span 1;
+  grid-column: 1/span 1;
   grid-row: 2/span 1;
-  justify-content: start;
+  margin-left: 20%;
   }
 
 .home {
   background: url("../images/home.svg") no-repeat;
   width: 15px;
   height: 17px;
-  grid-column: 3/span 1;
+  grid-column: 2/span 1;
   grid-row: 2/span 1;
 }
 
@@ -176,7 +183,7 @@ h1.stop-name {
   background: url("../images/recents.svg") no-repeat;
   width: 15px;
   height: 17px;
-  grid-column: 4/span 1;
+  grid-column: 3/span 1;
   grid-row: 2/span 1;
-  justify-content: end;
+  margin-right: 20%;
 }
