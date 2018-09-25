@@ -71,20 +71,18 @@ h2.page-title {
 
 .map img {
     width:100%;
-}
+  }
 
 .selected-stop img {
-    position: relative;
-    bottom: 100px;;
-    left: 255px;
-    height: 45px;
+    position: absolute;
+    top: 32%;
+    left: -10px;
+    height:50px;
 }
 
 main {
   background-color: #fff;
   box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
-  position: relative;
-  bottom: 75px;
 }
 
 .line-entry {
