@@ -164,11 +164,8 @@ h1.stop-name {
 
 .bottom-navbar {
   background-color: #000;
-  position: fixed;
-  z-index: 11;
-  bottom: 0px;
   height: 48px;
-  width: 575px;
+  width: 100%;
   display: grid;
   grid-template: repeat(3,1fr)/repeat(3, 1fr);
   justify-items: center;
