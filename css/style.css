@@ -69,21 +69,28 @@ h2.page-title {
   grid-column: 2/span 4;
 }
 
-.map img {
-    width:100%;
-  }
+.map {
+  background: url("../images/update-map.svg") no-repeat top center;
+  background-size: cover;
+  display: grid;
+  min-height: 300px;
+  grid-template: 1fr 1fr/ repeat(3,1fr);
+}
 
-.selected-stop img {
-    position: absolute;
-    top: 280px;
-    left: -10px;
+.selected-stop {
+    background: url("../images/updated-selected-stop.svg") no-repeat;
+    width: 50px;
     height:50px;
+    margin-left: 60px;
+    margin-top: 40px;
+    grid-column: 2/span 1;
+    grid-row: 2/span 1;
 }
 
 main {
   background-color: #fff;
   box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
-}
+  }
 
 .line-entry {
   margin:8px 0;
