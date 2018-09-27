@@ -19,12 +19,14 @@
 }
 
 body {
-  font-size: 16 px;
+  font-size: 16px;
   font-family: "Roboto",sans-serif;
-  margin: 0 auto;
-  width: 575px;
   line-height:1em;
-  height: 100%;
+}
+
+.container {
+  margin: 0 auto;
+  width: 360px;
   }
 
 nav {
@@ -38,7 +40,6 @@ nav {
 }
 
 .status-bar {
-  background-color: rgba(0, 0, 0, 0.4);
   height: 24px;
   grid-column: 1/span 6;
   display: fixed;
@@ -51,11 +52,9 @@ nav {
   margin-top: 4px;
 }
 .back-arrow {
-  background: url("../images/arrow_back.png") no-repeat;
   display: block;
   color: #fff;
-  width: 20px;
-  height: 20px;
+  height: 1.25em;
   margin-left: 16px;
   grid-column: 1/span 1;
   }
@@ -64,7 +63,7 @@ h2.page-title {
   font-size: 1.25em;
   letter-spacing: .5px;
   color: #fff;
-  padding-left: 20%;
+  padding-left: 30%;
   margin-left: -80px;
   grid-column: 2/span 4;
 }
@@ -73,16 +72,17 @@ h2.page-title {
   background: url("../images/update-map.svg") no-repeat top center;
   background-size: cover;
   display: grid;
-  min-height: 300px;
+  min-height: 200px;
   grid-template: 1fr 1fr/ repeat(3,1fr);
 }
 
 .selected-stop {
     background: url("../images/updated-selected-stop.svg") no-repeat;
-    width: 50px;
-    height:50px;
-    margin-left: 60px;
-    margin-top: 40px;
+    background-size: contain;
+    width: 40px;
+    height: 40px;
+    margin-left: 35px;
+    margin-top: 30px;
     grid-column: 2/span 1;
     grid-row: 2/span 1;
 }
@@ -92,30 +92,29 @@ main {
   box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
   }
 
+h1.stop-name {
+    font-size: 1.5em;
+    font-weight: 700;
+    color: #fff;
+    background-color: #155265;
+    text-align: left;
+    padding-left: 16px;
+    line-height: 2em;
+    letter-spacing: .5px;
+  }
+
 .line-entry {
   margin:8px 0;
   width: 100%;
   display: grid;
-  grid-template: 1fr/ repeat(12,1fr);
+  grid-template: 1fr/ repeat(6,1fr);
   grid-gap: 16px;
-}
-
-h1.stop-name {
-  font-size: 1.5em;
-  font-weight: 700;
-  color: #fff;
-  background-color: #155265;
-  text-align: left;
-  padding-left: 16px;
-  line-height: 2em;
-  letter-spacing: .5px;
 }
 
 .bus-line {
     grid-row: 1/span 1;
-    grid-column: 1/span 2;
-    margin-left: 16px;
-}
+    grid-column: 1/span 1;
+    }
 
 .bus-line h3 {
   font-size: 1.17em;
@@ -124,13 +123,15 @@ h1.stop-name {
   background-color: #FFA84F;
   text-align: center;
   border-radius: 10px;
+  width: 48px;
+  text-align: center;
+  margin-left: 16px;
 }
 
 .destination {
-    grid-column: 3/span 7;
+    grid-column:2/span 3;
     grid-row: 1/span 1;
-    width: 350px;
-}
+  }
 
 .destination p {
   font-size:1em;
@@ -142,7 +143,7 @@ h1.stop-name {
 }
 
 .leaving-time {
-  grid-column: 9/span 4;
+  grid-column: 5/span 2;
   text-align: right;
   grid-row: 1/span 1;
   margin-right: 16px;
@@ -154,8 +155,8 @@ h1.stop-name {
   width: 20px;
   height: 20px;
   grid-row: 1/span 1;
-  grid-column: 10/span 1;
-  margin-left: 100px;
+  grid-column: 5/span 2;
+  margin-left: 12px;
   }
 
 .leaving-time h6 {
@@ -188,17 +189,13 @@ h1.stop-name {
   }
 
 .home {
-  background: url("../images/home.svg") no-repeat;
-  width: 17px;
-  height: 17px;
+  color: #fff;
   grid-column: 2/span 1;
   grid-row: 2/span 1;
 }
 
 .recents {
-  background: url("../images/recents.svg") no-repeat;
-  width: 17px;
-  height: 17px;
+  color: #fff;
   grid-column: 3/span 1;
   grid-row: 2/span 1;
   margin-right: 20%;
