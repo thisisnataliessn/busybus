@@ -30,7 +30,7 @@ body {
   }
 
 nav {
-  height:100px;
+  height:80px;
   background-color: #248FB2;
   box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
   position: relative;
@@ -63,7 +63,7 @@ h2.page-title {
   font-size: 1.25em;
   letter-spacing: .5px;
   color: #fff;
-  padding-left: 30%;
+  padding-left: 80px;
   margin-left: -80px;
   grid-column: 2/span 4;
 }
@@ -89,8 +89,9 @@ h2.page-title {
 
 main {
   background-color: #fff;
-  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+  box-shadow: 0 -2px 6px rgba(0,0,0,0.16), 0 -2px 6px rgba(0,0,0,0.23);
   }
+
 
 h1.stop-name {
     font-size: 1.5em;
@@ -99,7 +100,8 @@ h1.stop-name {
     background-color: #155265;
     text-align: left;
     padding-left: 16px;
-    line-height: 2em;
+    padding-top: 24px;
+    padding-bottom: 24px;
     letter-spacing: .5px;
   }
 
